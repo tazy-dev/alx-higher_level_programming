@@ -7,10 +7,8 @@ if __name__ == "__main__":
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
     func = {"+": add, "-": sub, "*": mul, "/": div}
-    op1 = int(sys.argv[1])
-    op = sys.argv[2]
-    op2 = int(sys.argv[3])
-    
+    op1, op, op2 = int(sys.argv[1]), sys.argv[2], int(sys.argv[3])
+
     if op in "+-*/":
         print("{} {} {} = {}".format(op1, op, op2, func[op](op1, op2)))
     else:
