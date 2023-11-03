@@ -9,7 +9,7 @@ if __name__ == "__main__":
     func = {"+": add, "-": sub, "*": mul, "/": div}
     op1, op, op2 = int(sys.argv[1]), sys.argv[2], int(sys.argv[3])
 
-    if op in "+-*/":
+    if op in list(func.keys()):
         print("{} {} {} = {}".format(op1, op, op2, func[op](op1, op2)))
     else:
         print("Unknown operator.  Available operators: +, -, *, and /")
