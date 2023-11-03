@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 if __name__ == "__main__":
     import sys
     from calculator_1 import add, sub, mul, div
@@ -11,7 +10,7 @@ if __name__ == "__main__":
     op1 = int(sys.argv[1])
     op = sys.argv[2]
     op2 = int(sys.argv[3])
-
+    
     if op in "+-*/":
         print("{} {} {} = {}".format(op1, op, op2, func[op](op1, op2)))
     else:
