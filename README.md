@@ -16,3 +16,8 @@
 * **0x02-python-import-modules**
   * [0x02-python-import-modules](./0x02-python-import_modules/) : Learning  about importing and using functions and creating modules, using the builtin functions `dir()` and `help()`.
   * importing and executing modules along with modules namespaces and using command line arguments within Python programs.
+
+* **0x03-python-data-structures**
+  * [0x03-python-data-structures](./0x03-python-data_structures/) : Learning About Lists, Tuple, Sets and dictionary along with their mutability state and their distinct features
+  * Also learning about the differernt functions avaialble to each 
+  * Finally learning about list comperhension which is a neat way to create and manipulate list  
