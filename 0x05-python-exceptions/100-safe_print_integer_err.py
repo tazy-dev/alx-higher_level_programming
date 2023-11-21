@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import sys
-import traceback
 
 
 def safe_print_integer_err(value):
@@ -17,6 +16,5 @@ def safe_print_integer_err(value):
         print("{:d}".format(value))
         return (True)
     except (TypeError, ValueError):
-        trace = list(traceback.format_exc().split(":"))[-1][1:-2]
-        print("Exception: {}".format(trace), file=sys.stderr)
+        print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr)
         return (False)
