@@ -15,6 +15,7 @@ class Square:
 
         Args:
             size (int): The size of the new square object
+	    position (tuple) : The starting location of the square
         '''
         self.__size = size
         self.__position = position
@@ -32,7 +33,7 @@ class Square:
         Set the value of size
         '''
         if not isinstance(value, int):
-            raise TypeError("must be an integer")
+            raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
