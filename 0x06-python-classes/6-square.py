@@ -18,7 +18,7 @@ class Square:
             position (tuple): The starting location of the square
         '''
         self.__size = size
-        self.__position = position
+        self.position = position
 
     @property
     def size(self):
@@ -72,5 +72,5 @@ class Square:
             return
         [print() for idx in range(self.__position[1])]
         for idx in range(self.__size):
-            [print(" ", end="") for ind in range(self.__position[0])]
+            print(" " * self.__position[0], end="")
             print("#" * self.__size)
