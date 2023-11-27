@@ -101,7 +101,8 @@ class Rectangle:
         """
         Return the string representation of the Rectangle object
         """
-        return ("Rectangle({},{})".format(self.__width, self.__height))
+        if Rectangle.number_of_instances > 0:
+            return ("Rectangle({},{})".format(self.__width, self.__height))
 
     def __del__(self):
         """
@@ -135,4 +136,4 @@ class Rectangle:
         Args:
             size (int): The width and height of the new Rectangle.
         """
-        return (cls(size, size))
+        return (Rectangle(size, size))
