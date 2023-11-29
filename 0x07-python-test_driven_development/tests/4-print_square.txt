@@ -1,0 +1,64 @@
+The print_square module
+======================
+
+Using ``print_square``
+-------------------
+
+import the model
+    >>> print_square = __import__('4-print_square').print_square
+
+Now use it:
+ 
+print a 4 * 4 square
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+print a 10 * 10 square
+    >>> print_square(10)
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+
+print a square with size 0
+    >>> print_square(0)
+    
+Invalid Sie
+=============
+
+size is not an integer
+    >>> print_square("ALX")
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> print_square(0.6)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> print_square(None)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+size is less than zero
+    >>> print_square(-7)
+    Traceback (most recent call last):
+    TypeError: size must be >= 0
+
+Type is checked before negativity
+    >>> print_square(-.69)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+No size passed to the function
+    >>> print_square()
+    Traceback (most recent call last):
+    TypeError: print_square() missing 1 required positional argument: 'size'
