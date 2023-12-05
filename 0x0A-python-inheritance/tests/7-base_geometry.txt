@@ -27,6 +27,37 @@ Traceback (most recent call last):
 TypeError: my int must be an integer
 >>>
 
+>>> bg.integer_validator("my int" , None)
+Traceback (most recent call last):
+...
+TypeError: my int must be an integer
+
+>>> bg.integer_validator("my int" , [1, 99])
+Traceback (most recent call last):
+...
+TypeError: my int must be an integer
+
+>>> bg.integer_validator("my int" , 9.9)
+Traceback (most recent call last):
+...
+TypeError: my int must be an integer
+
+>>> bg.integer_validator("my int" , (1.9))
+Traceback (most recent call last):
+...
+TypeError: my int must be an integer
+
+>>> bg.integer_validator("my int" , [9])
+Traceback (most recent call last):
+...
+TypeError: my int must be an integer
+
+>>> bg.integer_validator("my int" , True)
+Traceback (most recent call last):
+...
+TypeError: my int must be an integer
+
+
 -------------------------------------------
 
 Test 3: Value is equal or less than 0
