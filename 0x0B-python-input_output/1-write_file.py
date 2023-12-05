@@ -4,11 +4,14 @@
 
 def write_file(filename="", text=""):
     '''
-    Print the number of chars written tp the file.
+     rite a string to a UTF8 text file..
 
     Args:
     filename: the file path
     text: the string to be written to the file
+
+    Return:
+    The number of characters written
     '''
-    with open("filename", 'w', encoding='utf-8') as file:
-        print(file.write(text))
+    with open("filename", 'w', encoding="utf-8") as file:
+        return (file.write(text))

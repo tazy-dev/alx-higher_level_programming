@@ -4,11 +4,14 @@
 
 def write_file(filename="", text=""):
     '''
-    Print the number of chars written tp the file.
+    Appends a string to the end of a UTF8 text file
 
     Args:
     filename: the file path
     text: the string to be written to the file
+
+    Return:
+    The number of characters appended
     '''
     with open("filename", 'a', encoding='utf-8') as file:
-        print(file.write(text))
+        return (file.write(text))
