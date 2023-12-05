@@ -26,7 +26,7 @@ class Student:
         attrs: List containg the attributes to be returned if found
         '''
         if (type(attrs) is list and
-                all(type(attr) issubclass str for attr in attrs)):
-            return ({k: self.__getattribute__(k) for k in attrs
-                    if hasattr(self, k)})
+                all(type(attr) is str for attr in attrs)):
+            return {k: self.__getattribute__(k) for k in attrs
+                    if hasattr(self, k)}
         return (self.__dict__)
