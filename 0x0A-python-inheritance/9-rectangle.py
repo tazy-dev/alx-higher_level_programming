@@ -24,4 +24,4 @@ class Rectangle(BG):
 
     def __str__(self):
         """Return the print() and str() representation of a Rectangle."""
-        return f"[self.__class__.__name__] {self.__width}/{self.__height}"
+        return f"[{self.__class__.__name__}] {self.__width}/{self.__height}"
